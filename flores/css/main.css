@@ -44,8 +44,8 @@ body {
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
   position: fixed;  /* Fijar el texto en la parte inferior */
-  bottom: 0;  /* Lo posiciona al fondo de la pantalla */
-  width: 100%;  /* Hace que el texto ocupe todo el ancho de la pantalla */
+  bottom: 500;  /* Lo posiciona al fondo de la pantalla */
+  width: 90%;  /* Hace que el texto ocupe todo el ancho de la pantalla */
   text-align: center;  /* Centra el texto */
   font-weight: bold;
   letter-spacing: 10px;

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+}
+
+body {
+    color: azure;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* padding-top: -30; */
+}
+
+.botones {
+    padding: 12px 35px;
+    /* Espaciado alrededor del texto */
+    border-radius: 30px;
+    /* Radio de esquina más pequeño */
+    background: linear-gradient(135deg, #8e44ad, #2c3e50);
+    /* Gradiente morado y negro */
+    color: white;
+    /* Texto blanco */
+    font-size: 16px;
+    /* Tamaño de texto */
+    font-weight: bold;
+    /* Negrita */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambia el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    transition: all 0.4s ease-in-out;
+    /* Transición suave */
+    outline: none;
+    /* Elimina el contorno cuando está enfocado */
+}
+
+.botones:hover {
+    background: linear-gradient(135deg, #2c3e50, #8e44ad);
+    /* Cambia el gradiente en hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra más fuerte en hover */
+    transform: translateY(-4px);
+    /* Efecto de elevación */
+    filter: brightness(1.1);
+    /* Aumenta el brillo en hover */
+}
+
+.botones:active {
+    transform: translateY(-2px);
+    /* Efecto de presionar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más suave cuando se presiona */
+}
+
+.botones:focus {
+    box-shadow: 0 0 0 4px rgba(142, 68, 173, 0.7);
+    /* Resalta el botón con una sombra morada */
+}
+
+
+.greetings {
+    font-size: 7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* Pone el texto en mayúsculas */
+    letter-spacing: 5px;
+    /* Espaciado entre letras para mayor estilo */
+    font-family: 'Arial', sans-serif;
+    /* Fuente limpia y moderna */
+}
+
+.greetings>span {
+    animation: glow 3s ease-in-out infinite, float 5s ease-in-out infinite;
+    /* Añadí una animación de "flotante" */
+}
+
+@keyframes glow {
+    0%,
+    100% {
+        color: #8e44ad;
+        /* Morado brillante */
+        text-shadow: 0 0 15px #8e44ad, 0 0 30px #9b59b6, 0 0 60px #9b59b6, 0 0 90px #8e44ad, 0 0 120px #9b59b6;
+        /* Resplandor más intenso */
+    }
+
+    10%,
+    90% {
+        color: #5d2f6e;
+        /* Morado oscuro cuando no está brillando */
+        text-shadow: none;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        /* Inicia en su posición original */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Sube un poco */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Vuelve a la posición original */
+    }
+}
+
+/* Para las palabras "HOLA" */
+.greetings > span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.greetings > span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.greetings > span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.greetings > span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.greetings > span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+/* Para las palabras "A" */
+.greetings.a > span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.greetings.a > span:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.greetings.a > span:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.greetings.a > span:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+.greetings.a > span:nth-child(5) {
+    animation-delay: 1.8s;
+}
+
+.greetings.a > span:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.greetings.a > span:nth-child(7) {
+    animation-delay: 2.2s;
+}
+
+
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width:574px) {
+    .greetings {
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 2rem;
+    }
+
+    .button a {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para las estrellas 
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+*/

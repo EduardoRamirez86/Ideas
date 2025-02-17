@@ -43,17 +43,14 @@ body {
 .titulo {
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
-  position: absolute;  /* Coloca el texto de manera absoluta */
-  bottom: 20px;  /* Ajusta la distancia desde la parte inferior */
-  left: 50%;  /* Centra el texto horizontalmente */
-  width: 100%;
-  transform: translateX(-50%);  /* Centra el texto correctamente */
+  position: fixed;  /* Fijar el texto en la parte inferior */
+  bottom: 0;  /* Lo posiciona al fondo de la pantalla */
+  width: 100%;  /* Hace que el texto ocupe todo el ancho de la pantalla */
+  text-align: center;  /* Centra el texto */
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
-  text-align: center;
-  z-index: 0;
 }
 
 @keyframes fadeIn {
@@ -1664,3 +1661,5 @@ h1 {
 }
 
 /* Agregar más estilos según sea necesario */
+
+

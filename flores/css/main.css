@@ -44,21 +44,22 @@ body {
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
   position: fixed;  /* Fijar el texto en la parte inferior */
-  bottom: 20px;  /* Lo posiciona al fondo de la pantalla */
+  bottom: 50px;  /* Lo posiciona al fondo de la pantalla */
   width: 90%;  /* Hace que el texto ocupe todo el ancho de la pantalla */
   text-align: center;  /* Centra el texto */
   font-weight: bold;
   letter-spacing: 5px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
+  z-index: 1;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 100;
+    opacity: 0;
   }
   100% {
-    opacity: 100;
+    opacity: 1;
   }
 }
 

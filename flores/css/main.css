@@ -44,7 +44,7 @@ body {
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
   position: fixed;  /* Fijar el texto en la parte inferior */
-  bottom: 500;  /* Lo posiciona al fondo de la pantalla */
+  bottom: 20px;  /* Lo posiciona al fondo de la pantalla */
   width: 90%;  /* Hace que el texto ocupe todo el ancho de la pantalla */
   text-align: center;  /* Centra el texto */
   font-weight: bold;
@@ -55,10 +55,10 @@ body {
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 100;
   }
   100% {
-    opacity: 1;
+    opacity: 100;
   }
 }
 

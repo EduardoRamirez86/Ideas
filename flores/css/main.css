@@ -41,25 +41,30 @@ body {
 }
 
 .titulo {
-  margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
-  position: absolute;
+  position: absolute;  /* Coloca el texto de manera absoluta */
+  bottom: 20px;  /* Ajusta la distancia desde la parte inferior */
+  left: 50%;  /* Centra el texto horizontalmente */
+  width: 100%;
+  transform: translateX(-50%);  /* Centra el texto correctamente */
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
-  z-index: 1;
+  z-index: 0;
 }
+
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
+
 
 .night {
   z-index: -1;
@@ -1640,7 +1645,7 @@ h1 {
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
   h1 {
-      font-size: 1.5em;
+      font-size: 1em;
   }
 }
 

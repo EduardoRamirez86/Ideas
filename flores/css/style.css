@@ -68,7 +68,7 @@ body {
 
 
 .greetings {
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 900;
     text-transform: uppercase;
     /* Pone el texto en mayúsculas */
@@ -183,13 +183,13 @@ body {
 @media screen and (max-width:574px) {
     .greetings {
         display: block;
-        font-size: 4rem;
-        font-weight: 800;
+        font-size: 3rem;
+        font-weight: 1000;
         text-align: center;
     }
 
     .description {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .button a {
